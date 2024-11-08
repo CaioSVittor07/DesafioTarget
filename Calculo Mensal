@@ -1,0 +1,23 @@
+print('='*40)
+print('Calculo de media')
+print('='*40)
+
+
+faturamento_diario = [22174.1664, 24537.6698, 26139.6134, 26742.6612, 42889.2258, 46251.174, 11191.4722, 3847.4823, 373.7838, 2659.7563, 48924.2448, 18419.2614, 35240.1826, 43829.1667, 18235.6852, 4355.0662, 13327.1025, 25681.8318, 1718.1221, 13220.495, 8414.61]
+
+
+menor_faturamento = min(faturamento_diario)
+
+
+maior_faturamento = max(faturamento_diario)
+
+
+media_faturamento = sum(faturamento_diario) / len(faturamento_diario)
+
+
+dias_acima_media = sum(1 for faturamento in faturamento_diario if faturamento > media_faturamento)
+
+
+print('Menor faturamento: R${:.2f}'.format(menor_faturamento))
+print('Maior faturamento: R${:.2f}'.format(maior_faturamento))
+print('Número de dias com faturamento superior à média mensal:{}'.format(dias_acima_media))
