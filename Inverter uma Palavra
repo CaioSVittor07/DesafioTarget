@@ -1,0 +1,8 @@
+print('='*50)
+print('Invertendo palavras')
+print('='*50)
+
+
+p = input('Digite uma palavra:')
+p_invertida = p[::-1]
+print(p_invertida)
